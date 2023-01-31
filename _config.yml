@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/Shirasawa-CN/shirasawa-cn.github.io/
+url: https://shirasawa-cn.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,4 +102,20 @@ theme: hexo-theme-aomori
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+	type: git
+	repository: git@github.com:Shirasawa-CN/shirasawa-cn.github.io.git
+	branch: gh-pages
+
+
+
+# Shirasawa 's blog
+aomori_menu:
+  Home: /
+  Archives: /archives
+  Friends: /friends
+aomori_widgets:
+  - toc # 文章导航
+  - category  #文章分类
+  - tag # 文章标签
+  - recent_posts  # 最新文章
+  - archive #文章归档
